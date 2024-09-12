@@ -5,7 +5,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background: #00595ec4;
+    /* background: #00595ec4; */
     font-family: 'Lora', serif;
 }
 
@@ -39,11 +39,12 @@ header ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header ul li {
     float: left;
+    position: relative;
 }
 
 header ul li a {

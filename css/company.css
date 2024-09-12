@@ -1,0 +1,137 @@
+body {
+    background: #fffff6;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section, .reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff; /**/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-content, .reverse .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text, .reverse .text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+}
+
+.reverse .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reverse .text {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.reverse .image {
+    flex: 1;
+    padding: 20px;
+}
+
+ul.services {
+    padding-left: 70px;
+}
+
+ul.services li span {
+    font-weight: bold;
+}
+
+a.ichtus {
+    text-decoration: none;
+    color: rgb(0, 100, 139);
+}
+
+.info-title, .social-title {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    padding-left: 0;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.contact-info i {
+    color: black;
+    margin-right: 10px;
+}
+
+.contact-info .adresse,
+.contact-info .tel,
+.contact-info .mail {
+    display: inline-block;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+.social-icons i{
+    color: #00484b;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #00f2ff;
+}
