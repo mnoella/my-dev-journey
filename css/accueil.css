@@ -1,3 +1,79 @@
 body {
-    background: #00595ec4;
+    background: none; 
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/aboutme.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -2;
+
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /*sombre*/
+    z-index: -1;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+span.portfolio {
+    color: #00f2ff;
+    font-size: 23px;
+}
+
+a.portfolio {
+    text-decoration: none;
+}
+
+a.ichtus {
+    text-decoration: none;
+    color: #00f2ff;
+    font-size: 24px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.ichtus:hover, span.portfolio:hover {
+    color: rgb(0, 89, 255);
+}
+
