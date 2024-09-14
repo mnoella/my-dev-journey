@@ -77,3 +77,29 @@ a.ichtus {
     color: rgb(0, 89, 255);
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #00f2ff;
+}
