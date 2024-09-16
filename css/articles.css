@@ -38,6 +38,8 @@ article {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 article:hover {
@@ -61,6 +63,7 @@ article h3 {
 
 article h3 span {
     color: #666;
+    font-style: italic;
 }
 
 article p {
@@ -68,6 +71,34 @@ article p {
     color: #666;
     margin: 0 15px 20px;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
+article p::after {
+    content: '...';
+    display: inline;
+    color: #666;
+}
+
+.read-more-button {
+    display: block;
+    width: 135px;
+    padding: 8px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #00d2dd;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.read-more-button:hover {
+    background-color: #00b8c7;
+}
 
