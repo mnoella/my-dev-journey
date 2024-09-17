@@ -1,0 +1,122 @@
+/* post.css */
+
+body {
+    font-family: 'Lora', serif;
+    background: #fffff6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation arrows (Back, Next, Previous) */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #00484b;
+}
+
+.back-arrow {
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-arrow:hover {
+    color: #00d2dd;
+}
+
+.nav-arrows a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-arrows a:hover {
+    color: #00d2dd;
+}
+
+/* Main content of the post */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #00484b;
+}
+
+article h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+article p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Carrousel Style */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+.carousel img.zoom {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+/* Navigation Arrows */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #00484b;
+}
+
+.navigation .back-arrow {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.navigation .nav-arrows a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0 10px;
+}
