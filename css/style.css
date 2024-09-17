@@ -61,5 +61,47 @@ header ul li a:hover {
 
 header .menu-toggle {
     display: none;
+    position: absolute;
+    font-size: 34px;
+    top: 17px;
+    right: 30px;
+    cursor: pointer;
 }
 
+header .close-toggle {
+    display: none;
+    position: absolute;
+    font-size: 34px;
+    top: 17px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.nav-hidden {
+    display: none;
+    
+}
+
+
+@media (max-width : 782px) {
+    
+    header .menu-toggle {
+        display: block;
+    }
+    .nav-visible {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #00484b;
+        width: 85%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        z-index: 2;
+    }
+
+    .nav-visible ~ .close-toggle {
+        display: block;
+    }
+}

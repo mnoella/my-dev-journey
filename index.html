@@ -20,15 +20,28 @@
             <h1 class="logo-text">My<span>Dev</span>Journey</h1>
         </div>
         <i class="fa fa-bars menu-toggle"></i>
-        <ul class="nav">
+        <ul class="nav nav-hidden">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="https://mnoella.github.io/Portfolio/" target="_blank">À propos</a></li>
             <li><a href="pages/company.html">Entreprise</a></li>
             <li><a href="pages/articles.html">Articles</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <!-- <li><a href="pages/contact.html">Contact</a></li> -->
         </ul>
     </header>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+    
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('nav-visible');
+                nav.classList.toggle('nav-hidden');
+            });
+        });
+    </script>
+    
+    
     
     
 
