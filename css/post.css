@@ -5,9 +5,10 @@ body {
     padding: 0;
 }
 
-/* Navarrows (Retour, Next, Previous) */
+/* Navigation Arrows (Back, Next, Previous) */
 .navigation {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: #00484b;
@@ -24,6 +25,22 @@ body {
     color: #00d2dd;
 }
 
+.nav-info {
+    flex: 1;
+    text-align: center;
+}
+
+.post-number {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.nav-arrows {
+    display: flex;
+    align-items: center;
+}
+
 .nav-arrows a {
     color: white;
     font-size: 24px;
@@ -36,7 +53,7 @@ body {
     color: #00d2dd;
 }
 
-
+/* Main content of the post */
 main {
     display: flex;
     justify-content: center;
@@ -70,7 +87,7 @@ article p {
     margin-bottom: 20px;
 }
 
-/* Carrousel img*/
+/* Carousel Style */
 .carousel {
     display: flex;
     overflow: hidden;
@@ -96,25 +113,4 @@ article p {
 .carousel img.zoom {
     transform: scale(1.5);
     z-index: 10;
-}
-
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #00484b;
-}
-
-.navigation .back-arrow {
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-}
-
-.navigation .nav-arrows a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    padding: 0 10px;
 }
