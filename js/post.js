@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Difficultés rencontrées et solutions: Un regard sur les obstacles",
             content: "Comme dans tout projet, j'ai rencontré des difficultés, mais j'ai également appris à trouver des solutions adaptées..."
         },
-        // Ajoutez d'autres articles ici
+        
     ];
 
     // Extraire l'ID de l'URL
