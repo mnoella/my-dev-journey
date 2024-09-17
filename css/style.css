@@ -12,6 +12,7 @@ body {
 header {
     background-color: #00484b;
     height: 66px;
+    position: relative;
 }
 
 header * {
@@ -68,19 +69,16 @@ header .menu-toggle {
     cursor: pointer;
 }
 
-header .close-toggle {
+/* header .close-toggle {
     display: none;
     position: absolute;
     font-size: 34px;
     top: 17px;
     right: 30px;
     cursor: pointer;
-}
+} */
 
-.nav-hidden {
-    display: none;
-    
-}
+
 
 
 @media (max-width : 782px) {
@@ -88,6 +86,7 @@ header .close-toggle {
     header .menu-toggle {
         display: block;
     }
+
     .nav-visible {
         display: flex;
         position: absolute;
@@ -101,7 +100,14 @@ header .close-toggle {
         z-index: 2;
     }
 
-    .nav-visible ~ .close-toggle {
-        display: block;
+    .nav-hidden {
+        display: none;
+        
     }
+
+    /* .nav-visible ~ .close-toggle {
+        display: block;
+    } */
 }
+
+
