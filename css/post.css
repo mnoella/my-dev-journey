@@ -87,22 +87,21 @@ article p {
     margin-bottom: 20px;
 }
 
-/* Styles pour les liens dans le corps de l'article */
+
 article a {
-    font-weight: bold; /* Met le texte en gras */
-    color: #00d2dd; /* Applique la couleur turquoise */
-    text-decoration: none; /* Retire le soulignement par défaut */
-    transition: color 0.3s ease; /* Ajoute une transition douce pour les changements de couleur */
+    font-weight: bold;
+    color: #00d2dd; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
-/* Optionnel : Changer la couleur au survol */
+
 article a:hover {
-    color: #008c8e; /* Change la couleur au survol (facultatif) */
+    color: #008c8e; 
 }
 
 
 
-/* Styles pour les images dans l'article */
 article img {
     width: 100%;
     max-width: 370px;
@@ -112,29 +111,29 @@ article img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Conteneur pour aligner les images côte à côte */
+
 .image-container {
     display: flex;
-    justify-content: center; /* Centrer les images */
-    flex-wrap: wrap; /* Permet de passer à la ligne suivante si l'espace manque */
-    gap: 20px; /* Espacement entre les images */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
-/* Changement d'alignement pour chaque image */
+
 .image-container img, .image-container video {
-    flex: 1; /* Les images prennent de l'espace également */
-    max-width: 370px; /* Limite la taille maximale des images */
+    flex: 1; 
+    max-width: 370px; 
     display: block;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Media query pour les petits écrans */
+
 @media (max-width: 768px) {
-    
+
     .image-container {
-        flex-direction: column; /* Les images passent en colonne */
-        align-items: center; /* Centrer les images dans la colonne */
+        flex-direction: column; 
+        align-items: center; 
         justify-content: center;
     }
 

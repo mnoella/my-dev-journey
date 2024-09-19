@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('article-content').innerHTML = article.content;
     }
 
-    // Configurer les boutons "Précédent" et "Suivant"
+    // boutons "Previous" et "Next"
     const prevButton = document.querySelector('.prev-article');
     const nextButton = document.querySelector('.next-article');
 
