@@ -131,8 +131,16 @@ article img {
 
 /* Media query pour les petits écrans */
 @media (max-width: 768px) {
+    
     .image-container {
         flex-direction: column; /* Les images passent en colonne */
         align-items: center; /* Centrer les images dans la colonne */
+        justify-content: center;
+    }
+
+    .tel {
+        width: 66%;
+        max-width: 200px;
+        margin: 0 auto;
     }
 }
