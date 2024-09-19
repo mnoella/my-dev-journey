@@ -87,30 +87,52 @@ article p {
     margin-bottom: 20px;
 }
 
-/* Carousel Style */
-.carousel {
-    display: flex;
-    overflow: hidden;
-    max-width: 100%;
-    margin: 20px auto;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Styles pour les liens dans le corps de l'article */
+article a {
+    font-weight: bold; /* Met le texte en gras */
+    color: #00d2dd; /* Applique la couleur turquoise */
+    text-decoration: none; /* Retire le soulignement par défaut */
+    transition: color 0.3s ease; /* Ajoute une transition douce pour les changements de couleur */
 }
 
-.carousel img {
+/* Optionnel : Changer la couleur au survol */
+article a:hover {
+    color: #008c8e; /* Change la couleur au survol (facultatif) */
+}
+
+
+
+/* Styles pour les images dans l'article */
+article img {
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+    max-width: 370px;
+    margin: 20px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.carousel img:hover {
-    transform: scale(1.1);
+/* Conteneur pour aligner les images côte à côte */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrer les images */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si l'espace manque */
+    gap: 20px; /* Espacement entre les images */
 }
 
-.carousel img.zoom {
-    transform: scale(1.5);
-    z-index: 10;
+/* Changement d'alignement pour chaque image */
+.image-container img {
+    flex: 1; /* Les images prennent de l'espace également */
+    max-width: 370px; /* Limite la taille maximale des images */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Les images passent en colonne */
+        align-items: center; /* Centrer les images dans la colonne */
+    }
 }
