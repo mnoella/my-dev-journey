@@ -121,7 +121,7 @@ article img {
 }
 
 /* Changement d'alignement pour chaque image */
-.image-container img {
+.image-container img, .image-container video {
     flex: 1; /* Les images prennent de l'espace également */
     max-width: 370px; /* Limite la taille maximale des images */
     display: block;

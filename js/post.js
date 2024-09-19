@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
                 <div class="image-container">
-                    <img src="../images/figma vid.mp4" alt="Profil utilisateur Intercession">
-                    <img src="../images/carrousel vid.mp4" alt="Défilement du carousel - Vidéo">
+                    <video controls width="370"> <source src="../images/figma vid.mp4" type="video/mp4" /> </video>
+                    <video controls width="370"> <source src="../images/carrousel vid.mp4" type="video/mp4" /> </video>
                 </div>
 
                 <h2>Défis rencontrés et apprentissages</h2>
