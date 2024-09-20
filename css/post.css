@@ -8,15 +8,16 @@ body {
 /* Navigation Arrows (Back, Next, Previous) */
 .navigation {
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 6px;
     background-color: #666;
+    
 }
 
 .back-arrow {
@@ -64,6 +65,7 @@ main {
     justify-content: center;
     padding: 40px 20px;
     margin-top: 80px;
+    padding-top: 100px;
 }
 
 article {
