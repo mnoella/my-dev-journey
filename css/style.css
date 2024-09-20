@@ -101,11 +101,13 @@ header .menu-toggle {
 
     .nav-visible {
         display: flex;
-        position: absolute;
-        flex-direction: column;
-        background-color: #00484b;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 85%;
         height: 100vh;
+        flex-direction: column;
+        background-color: #00484b;
         justify-content: center;
         align-items: center;
         font-size: 1.2em;
