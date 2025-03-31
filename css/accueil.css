@@ -1,12 +1,30 @@
+/* Variables */
+:root {
+    --primary-color: #00f2ff;
+    --hover-color: rgb(0, 89, 255);
+    --text-shadow: rgba(0, 0, 0, 0.9);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 body {
-    background: none; 
+    background: none;
     color: white;
     margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
-    
 }
 
 body::before {
@@ -21,7 +39,6 @@ body::before {
     background-position: center;
     filter: blur(4px);
     z-index: -2;
-
 }
 
 body::after {
@@ -31,17 +48,8 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /*sombre*/
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h4 {
-    font-size: 22px;
-    font-style: italic;
 }
 
 .welcome {
@@ -54,27 +62,48 @@ h4 {
     position: relative;
     z-index: 1;
     color: #f0f0f0;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 10px var(--text-shadow);
 }
 
-span.portfolio {
-    color: #00f2ff;
+.welcome-title {
+    font-size: 2.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+a.portfolio, a.ichtus {
+    text-decoration: none;
+    color: var(--primary-color);
     font-size: 23px;
+    text-shadow: 2px 2px 10px var(--text-shadow);
 }
 
-a.portfolio {
-    text-decoration: none;
-}
-
-a.ichtus {
-    text-decoration: none;
-    color: #00f2ff;
-    font-size: 24px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
-}
-
-.ichtus:hover, span.portfolio:hover {
-    color: rgb(0, 89, 255);
+a.portfolio:hover, a.ichtus:hover {
+    color: var(--hover-color);
 }
 
 .contact-info {
@@ -83,11 +112,8 @@ a.ichtus {
     bottom: 0;
     left: 0;
     color: white;
-    padding-left: 25px;
-    padding-bottom: 35px;
+    padding: 25px;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
     z-index: 1;
 }
 
@@ -99,9 +125,5 @@ a.ichtus {
 }
 
 .contact-info a:hover {
-    color: #00f2ff;
-}
-
-.contact-info p span {
-    font-size: 17px;
+    color: var(--primary-color);
 }

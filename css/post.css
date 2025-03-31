@@ -15,20 +15,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px;
-    background-color: #666;
-    
+    padding: 30px 15px 20px 15px;
+    background-color: rgba(255, 255, 255, 0.233); 
 }
 
-.back-arrow {
-    font-size: 26px;
-    color: white;
+.back-button, .button {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 14px;
+    color: #00484b; 
+    background-color: #f0f0f0;
     text-decoration: none;
-    transition: color 0.3s ease;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.back-arrow:hover {
-    color: #00d2dd;
+.back-button:hover, .button:hover {
+    background-color: #e0e0e0; 
+    color: #00363a; 
 }
 
 .nav-info {
